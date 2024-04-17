@@ -37,8 +37,8 @@ from pyrogram.types import (
     Message,
 )
 
-from Mikobot import BOT_USERNAME, MESSAGE_DUMP, MONGO_DB_URI, app
-from Mikobot.utils.custom_filters import PREFIX_HANDLER
+from MukeshRobot import BOT_USERNAME, MESSAGE_DUMP, MONGO_DB_URI, app
+from MukeshRobot.modules.helper_funcs.regex_helper import PREFIX_HANDLER
 
 # <=======================================================================================================>
 
