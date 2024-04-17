@@ -5,7 +5,13 @@
 # ➥ @YaeMiko_Roxbot @ᴜsᴇʀɴᴀᴍᴇ ᴏʀ ᴜsᴇʀɪᴅ ʏᴏᴜʀ ᴍᴇssᴀɢᴇ
 
 
-import shortuuid
+import asyncio
+import json
+import logging
+import os
+import sys
+import time
+
 from pymongo import MongoClient
 from telegram import (
     InlineKeyboardButton,
