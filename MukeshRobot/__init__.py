@@ -43,7 +43,7 @@ app2 = Client(
     "KakashiH",
     api_id=config.Config.API_ID,
     api_hash=config.Config.API_HASH,
-    session_string=str(config.Config.SESSION),
+    bot_token=config.Config.BOT_TOKEN,
 )
 
 
