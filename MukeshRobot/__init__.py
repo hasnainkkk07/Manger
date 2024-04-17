@@ -4,7 +4,6 @@ import sys
 import time
 import ast
 import base64
-import shortuuid
 import telegram.ext as tg
 from  aiohttp import ClientSession 
 from pyrogram import Client, errors
