@@ -77,10 +77,11 @@ PM_START_TEX = """
 
 PM_START_TEXT = """ 
 
-*ʜᴇʏ* {} ,[⚡]({}) 
-**I ᴀᴍ{}, Tʜᴇ ᴘᴏᴡᴇʀғᴜʟ ʙᴏᴛ
-ᴛᴏ ᴍᴀɴᴀɢᴇ ᴀɴᴅ sᴀᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ғʀᴏᴍ ᴇɴᴇᴍɪᴇs. 
-I ᴀᴍ ʙᴀsᴇᴅ ᴏɴ ᴀɴ ᴀɴɪᴍᴇ ᴄᴀʟʟᴇᴅ Nᴀʀᴜᴛᴏ.I ʜᴀᴠᴇ ᴛʜᴇ ᴘᴏᴡᴇʀ ᴛᴏ sᴀᴠᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘ ᴡɪᴛʜ ᴍʏ ᴄʜᴀᴋʀᴀ
+I Aᴍ Yᴏᴜʀ Rᴀɪᴅᴇɴ sʜᴏɢᴜɴ. Gᴇɴsʜɪɴ
+ ɪᴍᴘᴀᴄᴛ ᴛʜᴇᴍᴇᴅ ᴍᴀɴɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ᴍᴜsɪᴄ ʙᴏᴛ
+▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱
+🌌 Cᴏɴᴛʀᴏʟ Yᴏᴜʀ Gʀᴏᴜᴘ Eғғᴏʀᴛʟᴇssʟʏ.Tʏᴘᴇ /help Tᴏ Uɴᴠᴇɪʟ Yᴏᴜʀ Lᴏᴠᴇ.
+Lᴇᴛ's Bʀɪɴɢ Oʀᴅᴇʀ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ!.
 ─────────────────
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
@@ -89,18 +90,18 @@ I ᴀᴍ ʙᴀsᴇᴅ ᴏɴ ᴀɴ ᴀɴɪᴍᴇ ᴄᴀʟʟᴇᴅ Nᴀʀᴜᴛᴏ
 
 buttons = [
     [
-        InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton( text="🏡𝗩𝗶𝗹𝗹𝗮𝗴𝗲🏡 ", url=f"https://t.me/{SUPPORT_CHAT}"),
+        InlineKeyboardButton(text="ABOUT", callback_data="mukesh_"),
+        InlineKeyboardButton(text="OWNER", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton( text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
      ],
     [
         InlineKeyboardButton(
-            text="𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲 🥷",
+            text="𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽",
             url=f"https://t.me/{dispatcher.bot.username}?startgroup=true",
         ),
     ],
     [
-        InlineKeyboardButton(text="👺𝗖𝗵𝗮𝗸𝗿𝗮𝘀🈴", callback_data="Main_help"),
+        InlineKeyboardButton(text="𝗛𝗲𝗹𝗽", callback_data="Main_help"),
     ],
     
 
@@ -204,8 +205,7 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             
-            x=update.effective_message.reply_sticker(
-                "CAACAgUAAx0CbwIllwACI25k165blN9iovInDxfgL34AARGPl80AAvQKAALRgrlWUNB8Tr4vjfYwBA")
+           
             
             usr = update.effective_user
             lol = update.effective_message.reply_text(
@@ -376,27 +376,27 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="😒𝗕𝗮𝗰𝗸😒", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="𝗔𝗯𝗼𝘂𝘁", callback_data="mukesh_"),
+        InlineKeyboardButton(text="𝗢𝘄𝗻𝗲𝗿", url=f"tg://user?id={OWNER_ID}"),
     
      ],
                     [
                         InlineKeyboardButton(
-                            text="🚩sᴜᴩᴩᴏʀᴛ", callback_data="mukesh_support"
+                            text="𝘀𝘂𝗽𝗽𝗼𝗿𝘁", callback_data="mukesh_support"
                         ),
                         InlineKeyboardButton(
-                            text="ᴄᴏᴍᴍᴀɴᴅs 💁", callback_data="Main_help"
+                            text="ᴄᴏᴍᴍᴀɴᴅs", callback_data="Main_help"
                         ),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"
+                            text="𝗢𝘄𝗻𝗲𝗿", url=f"tg://user?id={OWNER_ID}"
                         ),
                         
                     ],
                     [
-                        InlineKeyboardButton(text="◁", callback_data="mukesh_back"),
+                        InlineKeyboardButton(text="𝗕𝗔𝗖𝗞", callback_data="mukesh_back"),
                     ],
                 ]
             ),
@@ -408,24 +408,24 @@ def Mukesh_about_callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-        InlineKeyboardButton(text="😒𝗕𝗮𝗰𝗸😒", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"), 
-        InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="𝗕𝗮𝗰𝗸", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="𝗔𝗯𝗼𝘂𝘁", callback_data="mukesh_"), 
+        InlineKeyboardButton(text="𝗢𝘄𝗻𝗲𝗿", url=f"tg://user?id={OWNER_ID}"),
         
      ],
                     [
                         InlineKeyboardButton(
-                            text="🏡 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
+                            text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs 🍷", url=f"https;//t.me/LovelyXAssociation"),
+                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https;//t.me/LovelyXAssociation"),
                     ],
                     [
                         InlineKeyboardButton(
-                            text="🥀 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
+                            text="ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"
                         ),
                         InlineKeyboardButton(
-                            text="ɢɪᴛʜᴜʙ 🍹", url="Hi I can't get source sorry"),
+                            text="ɢɪᴛʜᴜʙ", url="Hi I can't get source sorry"),
                     ],
                     [
                         InlineKeyboardButton(text="◁", callback_data="mukesh_"),
@@ -452,16 +452,16 @@ def MukeshRobot_Main_Callback(update: Update, context: CallbackContext):
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="📕 Mᴀɴᴀɢᴇᴍᴇɴᴛ", callback_data="help_back"),
-                        InlineKeyboardButton(text="Mᴜsɪᴄ 🎧", callback_data="Music_")
+                        InlineKeyboardButton(text="Mᴀɴᴀɢᴇᴍᴇɴᴛ", callback_data="help_back"),
+                        InlineKeyboardButton(text="Mᴜsɪᴄ ", callback_data="Music_")
                     ],
                     [
-                        InlineKeyboardButton(text="💁 Bᴀsɪᴄ ", callback_data="basic_help"),
-                        InlineKeyboardButton(text="Exᴘᴇʀᴛ 👮", callback_data="expert_help")
+                        InlineKeyboardButton(text="Bᴀsɪᴄ ", callback_data="basic_help"),
+                        InlineKeyboardButton(text="Exᴘᴇʀᴛ", callback_data="expert_help")
                     ],
                     [
-                        InlineKeyboardButton(text="🍹 Aᴅᴠᴀɴᴄᴇ", callback_data="advance_help"),
-                        InlineKeyboardButton(text="Dᴏɴᴀᴛɪᴏɴ 🎉", callback_data="donation_help") 
+                        InlineKeyboardButton(text=" Aᴅᴠᴀɴᴄᴇ", callback_data="advance_help"),
+                        InlineKeyboardButton(text="Dᴏɴᴀᴛɪᴏɴ ", callback_data="donation_help") 
                     ],
                     [InlineKeyboardButton(text="• Hᴏᴍᴇ •", callback_data="mukesh_back")]
                 ]
@@ -574,13 +574,7 @@ Wᴀʀɴ Mᴀɴᴀɢᴇᴍᴇɴᴛ
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
                 [ [
-        InlineKeyboardButton(text="😒𝗕𝗮𝗰𝗸😒", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="👺𝗖𝗵𝗮𝗸𝗿𝗮𝘀🈴", callback_data="Main_help"),
-     ],
-                    [
-                        InlineKeyboardButton(text="• Dᴏɴᴀᴛᴇ •", url="https://t.me/Kakashiinfo/6"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
+                        InlineKeyboardButton(text="• Dᴏɴᴀᴛᴇ •", url="https://t.me/ANIME_NETWORK07/89"),InlineKeyboardButton(text="• sᴜᴘᴘᴏʀᴛ •", callback_data="mukesh_support")
                     ]
                 ]
             ),
@@ -611,10 +605,10 @@ def Source_about_callback(update: Update, context: CallbackContext):
         InlineKeyboardButton(text="sᴏᴜʀᴄᴇ", url="Nope 🙅 not available")
                 ],
                  [
-        InlineKeyboardButton(text="😒𝗕𝗮𝗰𝗸😒", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="👺𝗖𝗵𝗮𝗸𝗿𝗮𝘀🈴", callback_data="Main_help"),
+        InlineKeyboardButton(text="BACK", callback_data="mukesh_back"),
+        InlineKeyboardButton(text="ABOUT", callback_data="mukesh_"),
+        InlineKeyboardButton(text="DEVELOPER", url=f"tg://user?id={OWNER_ID}"),
+        InlineKeyboardButton(text="HELP", callback_data="Main_help"),
      ],[InlineKeyboardButton(text="◁", callback_data="source_back")]]
             ),
         )
@@ -638,13 +632,7 @@ def Music_about_callback(update: Update, context: CallbackContext):
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-        InlineKeyboardButton(text="😒𝗕𝗮𝗰𝗸😒", callback_data="mukesh_back"),
-        InlineKeyboardButton(text="😀𝗔𝗯𝗼𝘂𝘁😀", callback_data="mukesh_"),
-        InlineKeyboardButton(text="💌𝗠𝗮𝘀𝘁𝗲𝗿📩", url=f"tg://user?id={OWNER_ID}"),
-        InlineKeyboardButton(text="👺𝗖𝗵𝗮𝗸𝗿𝗮𝘀🈴", callback_data="Main_help"),
-     ],
+                [                    
                     [
                         InlineKeyboardButton(
                             text="⍟ ᴀᴅᴍɪɴ ⍟", callback_data="Music_admin"
@@ -1000,7 +988,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1929914544 and DONATION_LINK:
+        if OWNER_ID != 6346273488 and DONATION_LINK:
             update.effective_message.reply_text(
                 f"» ᴛʜᴇ ᴅᴇᴠᴇʟᴏᴩᴇʀ ᴏғ {dispatcher.bot.first_name} sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ ɪs [ɢɪᴛʜᴜʙ](Nope no need it's free and thnx)"
                 f"\n\nʙᴜᴛ ʏᴏᴜ ᴄᴀɴ ᴀʟsᴏ ᴅᴏɴᴀᴛᴇ ᴛᴏ ᴛʜᴇ ᴩᴇʀsᴏɴ ᴄᴜʀʀᴇɴᴛʟʏ ʀᴜɴɴɪɴɢ ᴍᴇ : [ʜᴇʀᴇ]({DONATION_LINK})",
@@ -1051,8 +1039,8 @@ def main():
                 [
                     [
                         InlineKeyboardButton(
-                            text=" 🥷 𝗦𝘂𝗺𝗺𝗼𝗻 𝗺𝗲 🥷",
-                            url="https://t.me/Kakashi_Hatakes_bot?startgroup=true"
+                            text="𝗔𝗱𝗱 𝗺𝗲 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗴𝗿𝗼𝘂𝗽",
+                            url="https://t.me/Raiden_Robot?startgroup=true"
                             )
                        ]
                 ]
@@ -1065,7 +1053,7 @@ def main():
                 caption=f"""
 ✨ㅤ{BOT_NAME} ɪs ᴀʟɪᴠᴇ ʙᴀʙʏ.
 ━━━━━━━━━━━━━
-**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ 🇸‌🇵‌🇪‌🇪‌🇩‌🇾‌™️ ✘  
+**ᴍᴀᴅᴇ ᴡɪᴛʜ ❤️ 𝗛𝗮𝘀𝗻𝗮𝗶𝗻 𝗸𝗵𝗮𝗻  
 **ᴘʏᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{y()}`
 **ʟɪʙʀᴀʀʏ ᴠᴇʀsɪᴏɴ:** `{telever}`
 **ᴛᴇʟᴇᴛʜᴏɴ ᴠᴇʀsɪᴏɴ:** `{tlhver}`
