@@ -70,6 +70,9 @@ def get_readable_time(seconds: int) -> str:
     ping_time += ":".join(time_list)
 
     return ping_time
+
+START_IMG = "https://telegra.ph/file/a9b68b5a0caffe4910d30.jpg"
+
 PM_START_TEX = """
 ʜᴇʟʟᴏ `{}`, ʜᴏᴡ ᴀʀᴇ ʏᴏᴜ \nᴡᴀɪᴛ ᴀ ᴍᴏᴍᴇɴᴛ ʙʀᴏ . . . 
 """
@@ -77,11 +80,11 @@ PM_START_TEX = """
 
 PM_START_TEXT = """ 
 
-I Aᴍ Yᴏᴜʀ Rᴀɪᴅᴇɴ sʜᴏɢᴜɴ. Gᴇɴsʜɪɴ
+*I Aᴍ Yᴏᴜʀ Rᴀɪᴅᴇɴ sʜᴏɢᴜɴ. Gᴇɴsʜɪɴ
  ɪᴍᴘᴀᴄᴛ ᴛʜᴇᴍᴇᴅ ᴍᴀɴɢᴇᴍᴇɴᴛ ʙᴏᴛ ᴀɴᴅ ᴍᴜsɪᴄ ʙᴏᴛ
 ▰▱▰▱▰▱▰▱▰▱▰▱▰▱▰▱
 🌌 Cᴏɴᴛʀᴏʟ Yᴏᴜʀ Gʀᴏᴜᴘ Eғғᴏʀᴛʟᴇssʟʏ.Tʏᴘᴇ /help Tᴏ Uɴᴠᴇɪʟ Yᴏᴜʀ Lᴏᴠᴇ.
-Lᴇᴛ's Bʀɪɴɢ Oʀᴅᴇʀ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ!.
+Lᴇᴛ's Bʀɪɴɢ Oʀᴅᴇʀ Tᴏ Yᴏᴜʀ Gʀᴏᴜᴘ!.*
 ─────────────────
    *➻ ᴜsᴇʀs »* {}
    *➻ ᴄʜᴀᴛs »* {}
