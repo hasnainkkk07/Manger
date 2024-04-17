@@ -48,7 +48,7 @@ from MukeshRobot.modules.helper_funcs.misc import paginate_modules
 
 
 
-def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     if query.data == "ai_handler":
         await query.answer()
@@ -74,7 +74,7 @@ def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
         )
 
 
-def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
     query = update.callback_query
     if query.data == "more_ai_handler":
         await query.answer()
@@ -1182,6 +1182,8 @@ def main():
     music_callback_handler = CallbackQueryHandler(
         Music_about_callback, pattern=r"Music_",run_async=True
     )
+    dazai_callback_handler = CallbackQueryHandler(
+        dazai_about_callback, pattern=r"dazai_", run_async=true
     mukeshrobot_main_handler = CallbackQueryHandler(
         MukeshRobot_Main_Callback, pattern=r".*_help",run_async=True)
     donate_handler = CommandHandler("donate", donate)
@@ -1190,6 +1192,9 @@ def main():
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(music_callback_handler)
+    dispatcher.add_handler(dazai_callback_handler)
+    dispatcher.add_handler(ai_handler_callback_handler)
+    dispatcher.add_handler(more_ai_handler_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
