@@ -1202,7 +1202,7 @@ def main():
     dispatcher.add_handler(dazai_callback_handler)
     dispatcher.add_handler(ai_callback_handler)
     dispatcher.add_handler(more_ai_callback_handler)
-    dispatcher.add_handler(settings_handler_handler)
+    dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
