@@ -1184,6 +1184,7 @@ def main():
     )
     dazai_callback_handler = CallbackQueryHandler(
         dazai_about_callback, pattern=r"dazai_", run_async=true
+    )
     mukeshrobot_main_handler = CallbackQueryHandler(
         MukeshRobot_Main_Callback, pattern=r".*_help",run_async=True)
     donate_handler = CommandHandler("donate", donate)
