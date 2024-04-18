@@ -48,7 +48,7 @@ from MukeshRobot.modules.helper_funcs.misc import paginate_modules
 
 
 
-async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def ai_handler_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "ai_handler":
         await query.answer()
@@ -74,7 +74,7 @@ async def ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE
         )
 
 
-async def more_ai_handler_callback(update: Update, context: ContextTypes.DEFAULT_TYPE):
+async def more_ai_handler_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "more_ai_handler":
         await query.answer()
