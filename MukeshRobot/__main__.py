@@ -48,9 +48,9 @@ from MukeshRobot.modules.helper_funcs.misc import paginate_modules
 
 
 
-async def ai_handler_callback(update: Update, context: CallbackContext):
+async def ai_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "ai_handler":
+    if query.data == "ai_":
         await query.answer()
         await query.message.edit_text(
             "🧠 *Artificial Intelligence Functions*:\n\n"
@@ -74,9 +74,9 @@ async def ai_handler_callback(update: Update, context: CallbackContext):
         )
 
 
-async def more_ai_handler_callback(update: Update, context: CallbackContext):
+async def more_ai_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "more_ai_handler":
+    if query.data == "more_ai_":
         await query.answer()
         await query.message.edit_text(
             "*Here's more image gen-related commands*:\n\n"
@@ -161,7 +161,7 @@ buttons = [
         InlineKeyboardButton( text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
      ],
      [
-        InlineKeyboardButton(text="AI", callback_data="ai_handler"),
+        InlineKeyboardButton(text="AI", callback_data="ai_"),
         InlineKeyboardButton(text="COMMANDS", callback_data="dazai_"),
     ],
     [
@@ -1185,6 +1185,12 @@ def main():
     dazai_callback_handler = CallbackQueryHandler(
         dazai_about_callback, pattern=r"dazai_", run_async=True
     )
+    ai_callback_handler = CallbackQueryHandler(
+        ai_about_callback, pattern=r"ai_",run_async=True
+    )
+    more_ai_callback_handler = CallbackQueryHandler(
+        more_ai_about_callback, pattern=r"more_ai_",run_async=True
+    )
     mukeshrobot_main_handler = CallbackQueryHandler(
         MukeshRobot_Main_Callback, pattern=r".*_help",run_async=True)
     donate_handler = CommandHandler("donate", donate)
@@ -1194,9 +1200,9 @@ def main():
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(music_callback_handler)
     dispatcher.add_handler(dazai_callback_handler)
-    dispatcher.add_handler(ai_handler_callback)
-    dispatcher.add_handler(more_ai_handler_callback)
-    dispatcher.add_handler(settings_handler)
+    dispatcher.add_handler(ai_callback_handler)
+    dispatcher.add_handler(more_ai_callback)
+    dispatcher.add_handler(settings_handler_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
     dispatcher.add_handler(migrate_handler)
