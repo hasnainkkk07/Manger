@@ -1183,7 +1183,7 @@ def main():
         Music_about_callback, pattern=r"Music_",run_async=True
     )
     dazai_callback_handler = CallbackQueryHandler(
-        dazai_about_callback, pattern=r"dazai_", run_async=true
+        dazai_about_callback, pattern=r"dazai_", run_async=True
     )
     mukeshrobot_main_handler = CallbackQueryHandler(
         MukeshRobot_Main_Callback, pattern=r".*_help",run_async=True)
