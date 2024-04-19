@@ -161,7 +161,7 @@ buttons = [
         InlineKeyboardButton( text="SUPPORT", url=f"https://t.me/{SUPPORT_CHAT}"),
      ],
      [
-        InlineKeyboardButton(text="AI", callback_data="ai_"),
+        InlineKeyboardButton(text="AI", callback_data="Miko_"),
         InlineKeyboardButton(text="COMMANDS", callback_data="dazai_"),
     ],
     [
