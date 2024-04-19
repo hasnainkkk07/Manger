@@ -48,9 +48,9 @@ from MukeshRobot.modules.helper_funcs.misc import paginate_modules
 
 
 
-async def ai_about_callback(update: Update, context: CallbackContext):
+async def miko_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "ai_":
+    if query.data == "Miko_":
         await query.answer()
         await query.message.edit_text(
             "🧠 *Artificial Intelligence Functions*:\n\n"
@@ -63,20 +63,20 @@ async def ai_about_callback(update: Update, context: CallbackContext):
                 [
                     [
                         InlineKeyboardButton(
-                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="more_ai_handler"
+                            "𝙈𝙊𝙍𝙀 𝙄𝙈𝘼𝙂𝙀 𝙂𝙀𝙉 ➪", callback_data="Miko_help"
                         ),
                     ],
                     [
-                        InlineKeyboardButton("» 𝙃𝙊𝙈𝙀 «", callback_data="Miko_back"),
+                        InlineKeyboardButton("» 𝙃𝙊𝙈𝙀 «", callback_data="mukesh_back"),
                     ],
                 ],
             ),
         )
 
 
-async def more_ai_about_callback(update: Update, context: CallbackContext):
+async def miko_help_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
-    if query.data == "more_ai_":
+    if query.data == "Miko_help":
         await query.answer()
         await query.message.edit_text(
             "*Here's more image gen-related commands*:\n\n"
@@ -698,7 +698,7 @@ def dazai_about_callback(update: Update, context: CallbackContext):
     if query.data == "dazai_":
         query.message.edit_text(
             text=f"""
-*𝙎𝙚𝙡𝙚𝙘𝙩 𝙩𝙝𝙚 𝙨𝙚𝙘𝙩𝙞𝙤𝙣 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙤𝙥𝙚𝙣*
+𝙎𝙚𝙡𝙚𝙘𝙩 𝙩𝙝𝙚 𝙨𝙚𝙘𝙩𝙞𝙤𝙣 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙤𝙥𝙚𝙣
             """,
                                    
                                    
@@ -1185,11 +1185,11 @@ def main():
     dazai_callback_handler = CallbackQueryHandler(
         dazai_about_callback, pattern=r"dazai_", run_async=True
     )
-    ai_callback_handler = CallbackQueryHandler(
-        ai_about_callback, pattern=r"ai_",run_async=True
+    miko_callback_handler = CallbackQueryHandler(
+        miko_about_callback, pattern=r"Miko_",run_async=True
     )
-    more_ai_callback_handler = CallbackQueryHandler(
-        more_ai_about_callback, pattern=r"more_ai_",run_async=True
+    miko_help_callback_handler = CallbackQueryHandler(
+        miko_help_about_callback, pattern=r"Miko_help",run_async=True
     )
     mukeshrobot_main_handler = CallbackQueryHandler(
         MukeshRobot_Main_Callback, pattern=r".*_help",run_async=True)
@@ -1200,8 +1200,8 @@ def main():
     dispatcher.add_handler(about_callback_handler)
     dispatcher.add_handler(music_callback_handler)
     dispatcher.add_handler(dazai_callback_handler)
-    dispatcher.add_handler(ai_callback_handler)
-    dispatcher.add_handler(more_ai_callback_handler)
+    dispatcher.add_handler(miko_callback_handler)
+    dispatcher.add_handler(miko_help_callback_handler)
     dispatcher.add_handler(settings_handler)
     dispatcher.add_handler(help_callback_handler)
     dispatcher.add_handler(settings_callback_handler)
