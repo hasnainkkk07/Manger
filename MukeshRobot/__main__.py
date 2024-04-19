@@ -179,7 +179,7 @@ buttons = [
 
 HELP_STRINGS = f"""
 
-» [{BOT_NAME}]https://te.legra.ph/file/158320e66a82746517be2.jpg  ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ"""
+» [{BOT_NAME}](https://te.legra.ph/file/158320e66a82746517be2.jpg) ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴ ʙᴇʟʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴇsᴄʀɪᴘᴛɪᴏɴ ᴀʙᴏᴜᴛ sᴘᴇᴄɪғɪᴄs ᴄᴏᴍᴍᴀɴᴅ"""
 
 DONATE_STRING = f"""Well I am free for all."""
 IMPORTED = {}
@@ -699,7 +699,7 @@ def dazai_about_callback(update: Update, context: CallbackContext):
     if query.data == "dazai_":
         query.message.edit_text(
             text=f"""
-𝙎𝙚𝙡𝙚𝙘𝙩 𝙩𝙝𝙚 𝙨𝙚𝙘𝙩𝙞𝙤𝙣[{BOT_NAME}]https://te.legra.ph/file/158320e66a82746517be2.jpg 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙤𝙥𝙚𝙣
+𝙎𝙚𝙡𝙚𝙘𝙩 𝙩𝙝𝙚 𝙨𝙚𝙘𝙩𝙞𝙤𝙣[{BOT_NAME}](https://telegra.ph/file/0ad7e9e8320b09a316477.jpg) 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙤𝙥𝙚𝙣
             """,
                                    
                                    
@@ -707,7 +707,7 @@ def dazai_about_callback(update: Update, context: CallbackContext):
             [
                 [
                     InlineKeyboardButton(text="MANAGEMENT", callback_data="help_back"),
-                    InlineKeyboardButton(text="AI", callback_data="ai_handler"),
+                    InlineKeyboardButton(text="AI", callback_data="Miko_"),
                 ],
                 [
                     InlineKeyboardButton(text="BACK", callback_data="mukesh_back"),
