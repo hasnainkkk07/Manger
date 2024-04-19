@@ -699,7 +699,7 @@ def dazai_about_callback(update: Update, context: CallbackContext):
     if query.data == "dazai_":
         query.message.edit_text(
             text=f"""
-𝙎𝙚𝙡𝙚𝙘𝙩 𝙩𝙝𝙚 [{𝙨𝙚𝙘𝙩𝙞𝙤𝙣}](https://telegra.ph/file/0ad7e9e8320b09a316477.jpg) 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙤𝙥𝙚𝙣
+𝙎𝙚𝙡𝙚𝙘𝙩 𝙩𝙝𝙚 [𝙨𝙚𝙘𝙩𝙞𝙤𝙣](https://telegra.ph/file/0ad7e9e8320b09a316477.jpg) 𝙩𝙝𝙖𝙩 𝙮𝙤𝙪 𝙬𝙖𝙣𝙩 𝙩𝙤 𝙤𝙥𝙚𝙣
             """,
                                    
                                    
